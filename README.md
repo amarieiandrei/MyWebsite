@@ -1,3 +1,3 @@
 # MyWebsite
-Un proiect de Link in Bio.
+Work in progress...
 https://amarieiandrei.github.io/MyWebsite/html/home
