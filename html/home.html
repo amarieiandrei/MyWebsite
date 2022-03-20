@@ -15,11 +15,18 @@
     <body>
         <div class="Container">
             <header>
-                <div class="LogoContainer">
-                    <a href="../html/home.html">
-                        <img src="../img/LogoImage.png" alt="Logo" class="Logo">
-                    </a>
+                <a href="../html/home.html" class="Logo" style="color: #fff;">
+                    <i class="fa-brands fa-magento fa-2xl"></i>
+                </a>
+                
+                <div class="transition">
+                    PEEP THE VISION
                 </div>
+                
+                <button class="Cv">
+                    <p style="font-family:'Times New Roman', Times, serif;">Download CV</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
             </header>
             
             <div class="Nvb-Main-Container">
@@ -70,17 +77,13 @@
 
                 <main>
                     <section class="MainFocus">
-                        <img src="../img/sefu.png" alt="myPhoto" width="324" height="480">
-                            
-                        <label for="communication">Let's Talk:</label>
-                        <select id="communication">
-                            <option value="livechat">Live Chat</option>
-                            <option value="telephone">Phone Call</option>
-                            <option value="mail">Mail</option>
-                        </select>
-
-                        <p><strong>Andrei Amariei</strong></p>
-                        <p>STUDENT // SOFTWARE DEVELOPER</p>
+                        <img src="../img/Me.png" alt="myPhoto" class="Me">
+                        <p class="NameText"><strong>Andrei Amariei</strong></p>
+                        <p class="DescriptionText">STUDENT // SOFTWARE DEVELOPER</p>
+                        
+                        <button class="LiveChat">LET'S<br>TALK</button>
+                        <div class="line"></div>
+                        <div class="arrow"></div>
                     </section>
 
                     <aside class="Asidebar">
@@ -105,9 +108,13 @@
                 </main>
             </div>
             <footer>
-                <p>Last updated: 06 / 03 / 2022</p>
-                <p>© 2022 Andrei Amariei</p>      
-                <a href="https://validator.w3.org/">Verifica codul</a>
+                <div class="CopyrightContainer">© Andrei Amariei, All Rights Reserved</div>
+                <div class="PolicyContainer">
+                    <div class="Cv">
+                        <a href="../documents/Andrei-Amariei-Privacy-Policy.pdf" target="_blank" class="PolicyText">Privacy Policy</a>
+                    </div>
+                </div>
+                <!-- <a href="https://validator.w3.org/">Verifica codul</a> -->
             </footer>
         </div>
     </body>

@@ -2,38 +2,92 @@
     margin: 0; padding: 0;
 }
 
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
 html {
-    background-color:slategrey;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
 }
     body {
-        /* color: #fff; */
     }
         .Container {
             margin: 0 20px 0 20px;
         }
             header {
                 display: flex;
-            }
+                justify-content: space-between;
+                padding: 25px;
+                margin-bottom: 25px;
+            }   
                 .Logo {
-                    width: 50px;
-                    height: 50px;
+                    display: flex;
+                    place-items: center;
+                    margin-left: 140px;
+                }
+                .Logo:hover {
+                    animation: fa-beat 1.75s ease infinite;
+                }
+                .transition {
+                    position: relative;
+                    display: flex;
+                    place-items: center;
+                    animation: myTransition 5s infinite;
+                    animation-timing-function: linear;
+                    color: #fff;
+                }
+                @keyframes myTransition {
+                    0% {left: -25vw;}
+                    100%  {left: 25vw;}
+                }
+                .Cv {
+                    width: 150px;
+                    height: 40px;
+                    color: white;
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    padding: 0 20px 0 20px;
+                    background: hsl(0 0% 100% / 0.1);
+                    border-radius: 7.25px;
+                    border: none;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+                .Cv:hover {
+                    cursor: pointer;
+                    background-image: var(--gradient);
+                    background-size: 300%;
+                    background-position: right;
+                    transition: background-position 1.5s;
                 }
             .Nvb-Main-Container {
                 display: flex;
                 justify-content: left;
+                padding: 0 50px 0 75px;
             }
                 .Navbar {
-                    padding: 50px;
                     display: grid;
                     place-content: center;
-                    border-radius: 7.25px;
-
-                    background: hsl(0 0% 100% / 0.1);
-                    /* backdrop-filter: blur(1rem); */
-                    /* width: 23%; */
                 }
                     .NavbarMenu {
+                        width: 170px;
+                        height: 350px;
                         list-style: none;
+                        padding: 25px;
+                        background: hsl(0 0% 100% / 0.1);
+                        border-radius: 7.25px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     }
                         .NavbarItem {
                             margin: 0 0 1.5em 0;
@@ -45,6 +99,13 @@ html {
                             letter-spacing: 2px;
                             text-decoration: none;
                         }
+                        .NavbarItem > a:hover {
+                            background-image: var(--gradient);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-size: 125%;
+                            background-position: right;
+                        }
                         .NavbarItem > a > span {
                             font-weight: 700;
                             margin-inline-end: 0.75em;
@@ -55,36 +116,112 @@ html {
                     justify-content: space-between;
                 }
                     .MainFocus {
-                        padding: 50px;
+                        width: 100%;
                         display: grid;
                         place-content: center;
                     }
+                        .Me {
+                            width: 300px;
+                            height: 400px;
+                        }
+                        .NameText {
+                            color: #fff;
+                            font-size: 4rem;
+                            font-family: 'Times New Roman', Times, serif;
+                            margin: -120px 0 0 -100px;
+                            letter-spacing: 2px;
+                        }
+                        .DescriptionText {
+                            color: #fff;
+                            font-size: 1rem;
+                            font-family: 'Times New Roman', Times, serif;
+                            margin: -30px 0 0 -50px;
+                            letter-spacing: 3px;
+                        }
+                        .LiveChat {
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            color: white;
+                            background: hsl(0 0% 100% / 0.1);
+                            border: none;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            letter-spacing: 2px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            margin: -210px 0 0 275px;
+                        }
+                        .LiveChat:hover {
+                            cursor: pointer;
+                            background-image: var(--gradient);
+                            background-size: 300%;
+                            background-position: right;
+                            transition: background-position 2s;
+                        }
+                        .line {
+                            background-color: #fff;
+                            width: 60px;
+                            height: 0.1px;
+                            margin: -173.5px 0 0 345px;
+                        }
+                        .arrow {
+                            width: 1px;
+                            height: 1px;
+                            border: solid white;
+                            border-width: 0 1.1px 1.1px 0;
+                            padding: 1px;
+                            -webkit-transform: rotate(135deg);
+                            margin: -175px 0 0 345px;
+                        }
                     .Asidebar {
-                        padding: 50px;
                         display: grid;
                         place-content: center;
-                        
-                        border-radius: 7.25px;
-                        background: hsl(0 0% 100% / 0.1);
-                        /* backdrop-filter: blur(1rem); */
-                        /* width: 23%; */
                     }
                         .AsidebarMenu {
                             list-style: none;
                         }
                             .AsidebarItem {
                                 margin: 0 0 1.5em 0;
+                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
                             }
             footer {
-                display: grid;
-                place-content: center;
-            }
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                width: 94%;
+                height:60px;
+                display: flex;
+                justify-content: center;
+                place-items: center;
+            }   
+                /*Nu imi place cum e pozitionat butonul*/
+                .PolicyContainer {
+                    position: absolute;
+                    margin-left: 85vw;
+                    margin-bottom: 25px;
+                }
+                    .PolicyText {
+                        text-decoration: none;
+                        color: #fff;
+                    }
 
-@media screen and ( max-width: 600px ) {
+@media screen and ( min-height: 650px) {
+    header {
+        margin-top: 40px;
+        margin-bottom: 55px;
+    }
+    footer {
+        margin-bottom: 40px;
+    }
+    .line {
+        margin: -173.3px 0 0 345px;
+    }
+}
+
+/* @media screen and ( max-width: 600px ) {
     main {
         display: block;
-        /* width: 100vw;
-        justify-content: space-between; */
+        width: 100vw;
+        justify-content: space-between;
     }
     .AsidebarMenu {
         display: flex;
@@ -93,4 +230,4 @@ html {
     .Navbar {
         height: 300px;
     }
-}
+} */
