@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 
@@ -7,82 +8,129 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stdt. Andrei Amariei | Official Website</title>
+        <link rel="stylesheet" href="../css/styleServices.css">
+        <script src="https://kit.fontawesome.com/e2dfff9fc1.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="Container">
             <header>
-                <nav class="Navbar1">
-                    <div class="Logo">
-                        <img src="../img/LogoImage.png" alt="Logo" width="40" height="40">
-                        <a href="../html/home.html"><strong>Maliakademy</strong></a>
-                    </div>
+                <a href="../html/home.html" class="Logo" style="color: #fff;">
+                    <i class="fa-brands fa-magento fa-2xl"></i>
+                </a>
                 
-                    <ul class="Navbar1Menu">
-                        <li class="Navbar1MenuItem"><a href="../html/education.html">Education</a></li>
-                        <li class="Navbar1MenuItem"><a href="../html/portofolio.html">Portofolio</a></li>
-                        <li class="Navbar1MenuItem"><a href="../html/contact.html">Contact Me</a></li>
-                        <li class="Navbar1MenuItem"><a href="../html/services.html">Services</a></li>
-                        <li class="Navbar1MenuItem"><a href="../html/domainsInterest.html">Domains of interest</a></li>
-                    </ul>
+                <div class="transition">
+                    PEEP THE VISION
+                </div>
                 
-                    <button>Download CV</button>
-                    <a href="mailto:amarieiandrei60@gmail.com?subject=Salutare!">Mail</a>
-                </nav>
+                <button class="Cv">
+                    Download CV
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
             </header>
             
-            <main>
-                <h2>Services</h2>
-                <h3>Building Digital Product</h3>
-                <h4>If You Wish to Collab you will need To:</h4>
-                <ol>
-                    <li>
-                        <form action="../html/dashboard.html" target="_blank" method="get">
-                            <fieldset style="border-radius:10px; width:fit-content">
-                                <legend><h3>Register:</h3></legend>
-                                <label for="fname">First Name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
+            <div class="Nvb-Main-Container">
+                <nav class="Navbar">
+                    <ul class="NavbarMenu">
+                        <li class="NavbarItem">
+                            <a href="../html/home.html">
+                                <span>00</span>Maliakademy
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="../html/education.html">
+                                <span>01</span>Education
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="../html/portofolio.html">
+                                <span>02</span>Portofolio
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="../html/contact.html">
+                                <span>03</span>Contact Me
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="../html/services.html">
+                                <span>04</span>Services
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="../html/domainsInterest.html">
+                                <span>05</span>Domains of interest
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="../html/signUp.html">
+                                <span>06</span>Sign Up
+                            </a>
+                        </li>
+                        <li class="NavbarItem">
+                            <a href="mailto:amarieiandrei60@gmail.com?subject=Salutare!">
+                                <span>07</span>Mail
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                                <label for="lname">Last Name:</label><br>
-                                <input type="text" id="lname" name="lname"><br>
+                <main>
+                    <div class="MainFocus">
+                        <div class="ServicesContainer">
+                            <h1 class="ServicesHeader">Services</h1>
+                            <h2>Building Digital Product</h2>
+                            <h3>If You Wish to Collab you will need To</h3>
+                        </div>
+                        
+                        <form class="LoginForm" action="../html/dashboard.html" target="_blank" method="get">
+                            <!-- <fieldset class="LoginFieldset"> -->
 
-                                <label for="email">Email Address:</label><br>
-                                <input type="text" id="email" name="email"><br>
+                                <label id="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                
+                                <label id="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                                <button class="Cv" type="submit">Login</button>
 
-                                <label for="username">Username:</label><br>
-                                <input type="text" id="username" name="username"><br>
+                                <label>
+                                    <input class="Checkbox" type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
 
-                                <label for="pwd1">Password:</label><br>
-                                <input type="password" id="pwd1" name="pwd"><br>
-
-                                <label for="pwd2">Confirm Password:</label><br>
-                                <input type="password" id="pwd2" name="pwd"><br><br>
-
-                                <input type="submit" value="Create account">
-                            </fieldset>
+                            <!-- </fieldset> -->
                         </form>
-                    </li>
-                    <li>
-                        <form action="../html/dashboard.html" target="_blank" method="get">
-                            <fieldset style="border-radius: 10px; width: fit-content;">
-                                <legend><h3>Login:</h3></legend>
-                                <label for="loginusername">Username:</label><br>
-                                <input type="text" id="loginusername" name="username"><br>
-                                <label for="loginpwd1">Password:</label><br>
-                                <input type="password" id="loginpwd1" name="pwd"><br>
-                                <input type="checkbox" name="verify" value="d">
-                                <label>Stay logged in</label><br><br>
-                                <input type="submit" value="Login">
-                            </fieldset>
-                        </form>
-                    </li>
-                </ol>
-            </main>
+                    </div>
 
+                    <aside class="Asidebar">
+                        <ul class="AsidebarMenu">
+                            <li class="AsidebarItem">
+                                <a href="https://www.facebook.com/andrei.amariei.129/">
+                                    <span class="fa-brands fa-facebook" style="color:#fff"></span>
+                                </a>
+                            </li>
+                            <li class="AsidebarItem">
+                                <a href="https://github.com/amarieiandrei">
+                                    <span class="fa-brands fa-github" style="color: #fff;"></span>
+                                </a>
+                            </li>
+                            <li class="AsidebarItem">
+                                <a href="https://www.linkedin.com/in/amariei-andrei/">
+                                    <span class="fa-brands fa-linkedin" style="color: #fff;"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </main>
+            </div>
             <footer>
-                <p>Last updated: 06 / 03 / 2022</p>
-                <p>© 2022 Andrei Amariei</p>      
-                <a href="https://validator.w3.org/">Verifica codul</a>
+                <div class="CopyrightContainer">© Andrei Amariei, All Rights Reserved</div>
+                <div class="PolicyContainer">
+                    <div class="Cv">
+                        <a href="../documents/Andrei-Amariei-Privacy-Policy.pdf" target="_blank" class="PolicyText">Privacy Policy</a>
+                    </div>
+                </div>
+                <!-- <a href="https://validator.w3.org/">Verifica codul</a> -->
             </footer>
         </div>
     </body>

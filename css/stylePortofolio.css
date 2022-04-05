@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
 * {
     margin: 0; padding: 0;
 }
@@ -76,10 +78,8 @@ html {
                 display: flex;
                 justify-content: left;
                 padding: 0 50px 0 75px;
-
-                /* min-height: calc(100vh - 175px); */
             }
-               .Navbar {
+                .Navbar {
                     display: grid;
                     place-content: center;
                 }
@@ -121,60 +121,81 @@ html {
                     .MainFocus {
                         width: 100%;
                         display: grid;
-                        place-content: center;
+                        place-items: center;
                     }
-                        .Me {
-                            width: 300px;
-                            height: 400px;
-                        }
-                        .NameText {
+                        .PortofolioHeader {
                             color: #fff;
                             font-size: 4rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -120px 0 0 -100px;
-                            letter-spacing: 2px;
-                        }
-                        .DescriptionText {
-                            color: #fff;
-                            font-size: 1rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -30px 0 0 -50px;
-                            letter-spacing: 3px;
-                        }
-                        .LiveChat {
-                            width: 80px;
-                            height: 80px;
-                            border-radius: 50%;
-                            color: white;
-                            background: hsl(0 0% 100% / 0.1);
-                            border: none;
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                            letter-spacing: 2px;
-                            font-family: Arial, Helvetica, sans-serif;
-                            margin: -210px 0 0 275px;
-                        }
-                        .LiveChat:hover {
-                            cursor: pointer;
                             background-image: var(--gradient);
-                            background-size: 300%;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-size: 175%;
                             background-position: right;
-                            transition: background-position 2s;
                         }
-                        .line {
-                            background-color: #fff;
-                            width: 60px;
-                            height: 0.1px;
-                            margin: -173.5px 0 0 345px;
+                        .Carousel {
+                            position: relative;
+                            width: 15%;
+                            height: 250px;
                         }
-                        .arrow {
-                            width: 1px;
-                            height: 1px;
-                            border: solid white;
-                            border-width: 0 1.1px 1.1px 0;
-                            padding: 1px;
-                            -webkit-transform: rotate(135deg);
-                            margin: -175px 0 0 345px;
-                        }
+                            .CarouselTrackContainer {
+                                height: 80%;
+                                position: relative;
+                            }
+                                .CarouselTrack {
+                                    padding: 0;
+                                    margin: 0;
+                                    list-style: none;
+                                }
+                                    .CarouselSlide {
+                                        /* display: none; */
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                    }
+                                        .Portofolio {
+                                            width: 150px;
+                                            height: 200px;
+                                            border-radius: 7.25px;
+                                            border: none;
+                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                            /* object-fit: cover; */
+                                        }
+                            .CarouselButton {
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-200%);
+                                background: transparent;
+                                color: #fff;
+                                border: 0;
+                                cursor: pointer;
+                            }
+                                #CarouselButtonLeft {
+                                    position: relative;
+                                    left: -50px;
+                                }
+                                #CarouselButtonRight {
+                                    position: relative;
+                                    right: -190px;
+                                    top: -95px;
+                                }
+                            #hatz {
+                                position: absolute;
+                                color: #fff;
+                                letter-spacing: 2px;
+                                width: 22%;
+                                margin-left: 50%;
+                                font-family: 'Lato', sans-serif;
+                            }
+                            .FlexBox {
+                                margin-left: -70px;
+                                margin-top: -270px;
+                                display: flex;
+                                place-content: center;
+                                justify-content: space-between;
+                            }
+                            .FlexBox > button {
+                                margin-right: 10px;
+                            }
                     .Asidebar {
                         display: grid;
                         place-content: center;
@@ -184,7 +205,7 @@ html {
                         }
                             .AsidebarItem {
                                 margin: 0 0 1.5em 0;
-                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
                             }
             footer {
                 color: #fff;
@@ -195,7 +216,7 @@ html {
                 display: flex;
                 justify-content: center;
                 place-items: center;
-            }
+            }   
                 /*Nu imi place cum e pozitionat butonul*/
                 .PolicyContainer {
                     position: absolute;
@@ -225,6 +246,13 @@ html {
     }
     footer {
         margin-bottom: 40px;
+    }
+    #hatz {
+        position: absolute;
+        color: #fff;
+        letter-spacing: 2px;
+        width: 22%;
+        margin-left: 35%;
     }
 }
 

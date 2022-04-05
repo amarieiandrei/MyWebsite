@@ -8,8 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stdt. Andrei Amariei | Official Website</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleSignUp.css">
         <script src="https://kit.fontawesome.com/e2dfff9fc1.js" crossorigin="anonymous"></script>
+        <script src="../js/FormValidation.js" defer></script>
     </head>
 
     <body>
@@ -22,8 +23,8 @@
                 <div class="transition">
                     PEEP THE VISION
                 </div>
-
-                <button class="Cv" id="DownloadButton">
+                
+                <button class="Cv">
                     Download CV
                     <i class="fa-solid fa-arrow-down"></i>
                 </button>
@@ -76,15 +77,64 @@
                 </nav>
 
                 <main>
-                    <div class="MainFocus">
-                        <img src="../img/Me.png" alt="myPhoto" class="Me">
-                        <p class="NameText"><strong>Andrei Amariei</strong></p>
-                        <p class="DescriptionText">STUDENT // SOFTWARE DEVELOPER</p>
-                        
-                        <button class="LiveChat">LET'S<br>TALK</button>
-                        <div class="line"></div>
-                        <div class="arrow"></div>
-                    </div>
+                    <section class="MainFocus">
+                        <h1 class="SignUpHeader">Sign Up</h1>
+
+                        <form class="SignUpForm" id="form" action="../html/dashboard.html" target="_blank" method="get">
+                            <div class="FormControl">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter First Name" id="fname">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="FormControl">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter Last Name" id="lname">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="FormControl">
+                                <label>Email Address</label>
+                                <input type="text" placeholder="Enter Email" id="email">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="FormControl">
+                                <label>Username</label>
+                                <input type="text" placeholder="Enter Username" id="uname">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="FormControl">
+                                <label>Password</label>
+                                <input type="password" placeholder="Enter Password" id="psw1">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="FormControl">
+                                <label>Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" id="psw2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error message</small>
+                            </div>
+                            
+                            <button class="Cv" type="submit">Sign Up</button>
+                        </form>
+
+                        <p class="SignUpText">Welcome, <br>Let's Start The<br>Adventure.</p>
+
+                    </section>
 
                     <aside class="Asidebar">
                         <ul class="AsidebarMenu">

@@ -19,6 +19,7 @@ html {
     background-size: 300%;
     background-position: left;
     transition: background-position 1s;
+    color: #fff;
     font-family: 'Times New Roman', Times, serif;
 }
     body {
@@ -76,10 +77,8 @@ html {
                 display: flex;
                 justify-content: left;
                 padding: 0 50px 0 75px;
-
-                /* min-height: calc(100vh - 175px); */
             }
-               .Navbar {
+                .Navbar {
                     display: grid;
                     place-content: center;
                 }
@@ -121,59 +120,30 @@ html {
                     .MainFocus {
                         width: 100%;
                         display: grid;
-                        place-content: center;
+                        place-items: center;
                     }
-                        .Me {
-                            width: 300px;
-                            height: 400px;
-                        }
-                        .NameText {
-                            color: #fff;
+                        .EducationHeader {
+                            margin-top: -50px;
                             font-size: 4rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -120px 0 0 -100px;
-                            letter-spacing: 2px;
-                        }
-                        .DescriptionText {
-                            color: #fff;
-                            font-size: 1rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -30px 0 0 -50px;
-                            letter-spacing: 3px;
-                        }
-                        .LiveChat {
-                            width: 80px;
-                            height: 80px;
-                            border-radius: 50%;
-                            color: white;
-                            background: hsl(0 0% 100% / 0.1);
-                            border: none;
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                            letter-spacing: 2px;
-                            font-family: Arial, Helvetica, sans-serif;
-                            margin: -210px 0 0 275px;
-                        }
-                        .LiveChat:hover {
-                            cursor: pointer;
                             background-image: var(--gradient);
-                            background-size: 300%;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-size: 175%;
                             background-position: right;
-                            transition: background-position 2s;
                         }
-                        .line {
-                            background-color: #fff;
-                            width: 60px;
-                            height: 0.1px;
-                            margin: -173.5px 0 0 345px;
+                        .TablesContainer {
+                            margin-top: -150px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-evenly;
                         }
-                        .arrow {
-                            width: 1px;
-                            height: 1px;
-                            border: solid white;
-                            border-width: 0 1.1px 1.1px 0;
-                            padding: 1px;
-                            -webkit-transform: rotate(135deg);
-                            margin: -175px 0 0 345px;
+                        td {
+                            border:1px solid white;
+                            width: 300px;
+                            padding: 5px;
+                            }
+                        th {
+                            font-size: 1.25rem;
                         }
                     .Asidebar {
                         display: grid;
@@ -184,7 +154,7 @@ html {
                         }
                             .AsidebarItem {
                                 margin: 0 0 1.5em 0;
-                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
                             }
             footer {
                 color: #fff;
@@ -195,7 +165,7 @@ html {
                 display: flex;
                 justify-content: center;
                 place-items: center;
-            }
+            }   
                 /*Nu imi place cum e pozitionat butonul*/
                 .PolicyContainer {
                     position: absolute;

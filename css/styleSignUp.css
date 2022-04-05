@@ -19,7 +19,9 @@ html {
     background-size: 300%;
     background-position: left;
     transition: background-position 1s;
+    color: #fff;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
 }
     body {
     }
@@ -76,10 +78,8 @@ html {
                 display: flex;
                 justify-content: left;
                 padding: 0 50px 0 75px;
-
-                /* min-height: calc(100vh - 175px); */
             }
-               .Navbar {
+                .Navbar {
                     display: grid;
                     place-content: center;
                 }
@@ -120,61 +120,95 @@ html {
                 }
                     .MainFocus {
                         width: 100%;
-                        display: grid;
-                        place-content: center;
+                        display: flex;
+                        place-items: center;
+                        justify-content: space-around;
                     }
-                        .Me {
-                            width: 300px;
-                            height: 400px;
-                        }
-                        .NameText {
-                            color: #fff;
-                            font-size: 4rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -120px 0 0 -100px;
-                            letter-spacing: 2px;
-                        }
-                        .DescriptionText {
-                            color: #fff;
-                            font-size: 1rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -30px 0 0 -50px;
-                            letter-spacing: 3px;
-                        }
-                        .LiveChat {
-                            width: 80px;
-                            height: 80px;
-                            border-radius: 50%;
-                            color: white;
-                            background: hsl(0 0% 100% / 0.1);
-                            border: none;
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                            letter-spacing: 2px;
-                            font-family: Arial, Helvetica, sans-serif;
-                            margin: -210px 0 0 275px;
-                        }
-                        .LiveChat:hover {
-                            cursor: pointer;
+                        .SignUpHeader {
+                            height: 100%;
+                            margin-top: -15px;
+                            font-size: 3rem;
                             background-image: var(--gradient);
-                            background-size: 300%;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-size: 175%;
                             background-position: right;
-                            transition: background-position 2s;
                         }
-                        .line {
-                            background-color: #fff;
-                            width: 60px;
-                            height: 0.1px;
-                            margin: -173.5px 0 0 345px;
+                        .SignUpText {
+                            margin-bottom: -250px;
+                            margin-left: -20px;
+                            font-size: 2rem;
+                            background-image: var(--gradient);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-size: 275%;
+                            background-position: right;
                         }
-                        .arrow {
-                            width: 1px;
-                            height: 1px;
-                            border: solid white;
-                            border-width: 0 1.1px 1.1px 0;
-                            padding: 1px;
-                            -webkit-transform: rotate(135deg);
-                            margin: -175px 0 0 345px;
+                        .SignUpForm {
+                            margin-left: -20px;
+                            display: grid;
+                            place-content: center;
+                            width: 170px;
+                            height: 310px;
+                            list-style: none;
+                            padding: 25px;
+                            background: hsl(0 0% 100% / 0.1);
+                            border-radius: 7.25px;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            letter-spacing: 0.2px;
                         }
+                            .FormControl {
+                                position: relative;
+                            }
+                            .FormControl > label {
+                                display: inline-block;
+                                margin-bottom: 1px;
+                            }
+                            .FormControl > input {
+                                margin-bottom: 10px;
+                                border: none;
+                                opacity: 65%;
+                                height: 20px;
+                                border-radius: 1.25px;
+                                padding-left: 4px;
+                            }
+                            .FormControl.success > input {
+                                border: 2px solid #2ecc71;
+                            }
+                            .FormControl.error > input {
+                                border: 2px solid #e74c3c;
+                            }
+                            .FormControl > i {
+                                visibility: hidden;
+                                position: absolute;
+                                bottom: 14px;
+                                right: 10px;
+                            }
+                            .FormControl.success i.fa-solid.fa-circle-check {
+                                color: #2ecc71;
+                                visibility: visible;
+                            }
+                            .FormControl.error i.fa-solid.fa-circle-exclamation {
+                                color: #e74c3c;
+                                visibility: visible;
+                            }
+                            .FormControl > small {
+                                visibility: hidden;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                            }
+                            .FormControl.error > small {
+                                color: #e74c3c;
+                                visibility: visible;
+                                font-size: 10px;
+                                background-image: var(--gradient);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-size: 275%;
+                                background-position: right;
+                                letter-spacing: 1px;
+                            }
                     .Asidebar {
                         display: grid;
                         place-content: center;
@@ -184,7 +218,7 @@ html {
                         }
                             .AsidebarItem {
                                 margin: 0 0 1.5em 0;
-                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
                             }
             footer {
                 color: #fff;
@@ -195,7 +229,7 @@ html {
                 display: flex;
                 justify-content: center;
                 place-items: center;
-            }
+            }   
                 /*Nu imi place cum e pozitionat butonul*/
                 .PolicyContainer {
                     position: absolute;
@@ -241,4 +275,3 @@ html {
     .Navbar {
         height: 300px;
     }
-} */
