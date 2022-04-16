@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/CarouselActive.js" defer></script>
+    <script src="../js/PortofolioExplicit.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -62,7 +64,7 @@
             </li>
           </ul>
         </nav>
-
+        
         <main>
           <section class="MainFocus">
             <h1 class="PortofolioHeader">Portofolio</h1>
@@ -71,68 +73,44 @@
               <button class="CarouselButton" id="CarouselButtonLeft">
                 <i class="fa-solid fa-angle-left"></i>
               </button>
-
+              
               <div class="CarouselTrackContainer">
                 <ul class="CarouselTrack">
                   <li class="CarouselSlide">
-                    <a
-                      href="../documents/Andrei-Amariei-Resume.pdf"
-                      target="_blank"
-                    >
-                      <img
+                    <img
                         src="../img/Portofolio.png"
                         alt="Portofolio"
                         class="Portofolio"
+                        id="PortofolioID"
                       />
-                    </a>
                   </li>
                   <li class="CarouselSlide">
-                    <a
-                      href="../documents/CodecademyLearnGitCourse.pdf"
-                      target="_blank"
-                    >
                       <img
                         src="../img/CodecademyLearnGitCourse.png"
                         alt="CodecademyLearnGitCourse"
                         class="Portofolio"
                       />
-                    </a>
                   </li>
                   <li class="CarouselSlide">
-                    <a
-                      href="../documents/CodecademyLearnTheCommandLine.pdf"
-                      target="_blank"
-                    >
                       <img
                         src="../img/CodecademyLearnTheCommandLine.png"
                         alt="CodecademyLearnTheCommandLine"
                         class="Portofolio"
                       />
-                    </a>
                   </li>
                   <li class="CarouselSlide">
-                    <a
-                      href="../documents/CodecademyLearnJavaCourse.pdf"
-                      target="_blank"
-                    >
                       <img
                         src="../img/CodecademyLearnJavaCourse.png"
                         alt="CodecademyLearnJavaCourse"
                         class="Portofolio"
                       />
-                    </a>
                   </li>
                   <li class="CarouselSlide">
-                    <a
-                      href="../documents/CodecademyLearnBashScripting.pdf"
-                      target="_blank"
-                    >
                       <img
                         src="../img/CodecademyLearnBashScripting.png"
                         alt="CodecademyLearnBashScripting"
                         class="Portofolio"
                       />
-                    </a>
                   </li>
                 </ul>
               </div>
@@ -145,9 +123,15 @@
               <div class="FlexBox">
                 <button id="PlayButton" class="Cv">play</button>
                 <button id="StopButton" class="Cv">stop</button>
-                <input style="text-color:#000; background-color: #fff; border:none; border-radius: 7.25px; opacity: 15%;" placeholder="Type Something" type="text" id="CheckBox">
+                <input style="display: none; text-color:#000; background-color: #fff; border:none; border-radius: 7.25px; opacity: 15%;" placeholder="Type Something" type="text" id="CheckBox">
               </div>
             </div>
+
+            <div class="PopupImage">
+              <span>&times;</span>
+              <img src="" alt="" />
+            </div>
+
           </section>
 
           <aside class="Asidebar">

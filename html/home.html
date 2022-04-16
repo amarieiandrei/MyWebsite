@@ -9,7 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stdt. Andrei Amariei | Official Website</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <script src="https://kit.fontawesome.com/e2dfff9fc1.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../js/AsideLiveChat.js" defer></script>
     </head>
 
     <body>
@@ -81,13 +84,13 @@
                         <p class="NameText"><strong>Andrei Amariei</strong></p>
                         <p class="DescriptionText">STUDENT // SOFTWARE DEVELOPER</p>
                         
-                        <button class="LiveChat">LET'S<br>TALK</button>
+                        <button class="LiveChat" id="LiveChatID">LET'S<br>TALK</button>
                         <div class="line"></div>
                         <div class="arrow"></div>
                     </div>
 
                     <aside class="Asidebar">
-                        <ul class="AsidebarMenu">
+                        <ul class="AsidebarMenu" id="AsidebarMenuID">
                             <li class="AsidebarItem">
                                 <a href="https://www.facebook.com/andrei.amariei.129/">
                                     <span class="fa-brands fa-facebook" style="color:#fff"></span>
@@ -105,6 +108,31 @@
                             </li>
                         </ul>
                     </aside>
+
+                    <aside class="AsideLiveChat" id="AsideLiveChatID">
+                        <section class="chat-area">
+                            <div class="AsideHeader">
+                                <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+                                <!-- <img src="php/images/<?php echo $row['img']; ?>" alt=""> -->
+                                <img src="../img/Andrei.jpg" alt="" class="AsideHeaderImg">
+                                <div class="details">
+                                <!-- <span><?php echo $row['fname']. " " . $row['lname'] ?></span> -->
+                                <span class="AsideHeaderSpan">Andrei Amariei</span>
+                                <!-- <p><?php echo $row['status']; ?></p> -->
+                                <p style="color: #fff;">Active now</p>
+                                </div>
+                            </div>
+
+                            <div class="chat-box"></div>
+                            
+                            <form action="#" class="typing-area">
+                                <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
+                                <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </section>
+                    </aside>
+
                 </main>
             </div>
             <footer>

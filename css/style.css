@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0; padding: 0;
 }
@@ -6,6 +8,17 @@
     --gradient: linear-gradient(
         45deg,
         #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
+:root {
+    --gradient2: linear-gradient(
+        45deg,
         #d65db1,
         #ff6f91,
         #ff9671,
@@ -176,16 +189,155 @@ html {
                             margin: -175px 0 0 345px;
                         }
                     .Asidebar {
+                        position: absolute;
                         display: grid;
-                        place-content: center;
+                        place-items: center;
+                        top: 41.6%;
+                        right: 0;
+                        padding-right: 50px;
+                        margin-right: 20px;
                     }
-                        .AsidebarMenu {
+                        #AsidebarMenuID {
+                            /* display: none; */
                             list-style: none;
                         }
                             .AsidebarItem {
                                 margin: 0 0 1.5em 0;
                                 text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             }
+                    .AsideLiveChat {
+                        display: none;
+                        position: absolute;
+                        right: 0;
+                        
+                        color: #000;
+                        height: 70%;
+                        width: 21.5%;
+                        margin-right: 50px;
+
+                        background-image: var(--gradient2);
+                        background-size: 400%;
+                        background-position: left;
+                        transition: background-position 1s;
+                        
+                        border-radius: 7.25px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    }
+                        /* Chat Area CSS Start */
+                        .chat-area {
+                            height: 100%;
+                        }
+                        .chat-area .AsideHeader {
+                            display: flex;
+                            align-items: center;
+                            padding: 18px 30px;
+                        }
+                        .chat-area .AsideHeader .back-icon {
+                            /* color: #333; */
+                            color: #fff;
+                            font-size: 18px;
+                        }
+                        .chat-area .AsideHeader .AsideHeaderImg {
+                            height: 45px;
+                            width: 45px;
+                            margin: 0 15px;
+                            border-radius: 50px;
+                        }
+                        .chat-area .AsideHeader .details .AsideHeaderSpan {
+                            font-size: 17px;
+                            font-weight: 500;
+                            font-weight: bold;
+                            color: #fff;
+                        }
+                        .chat-box{
+                            position: relative;
+                            height: 51.8%;
+                            overflow-y: auto;
+                            padding: 10px 30px 20px 30px;
+                            background: #f7f7f7;
+                            box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                                        inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+                            background: hsl(0 0% 100% / 0.25);
+                        }
+                        /* .chat-box .text{
+                            position: absolute;
+                            top: 45%;
+                            left: 50%;
+                            width: calc(100% - 50px);
+                            text-align: center;
+                            transform: translate(-50%, -50%);
+                        }
+                        .chat-box .chat{
+                            margin: 15px 0;
+                        }
+                        .chat-box .chat p{
+                            word-wrap: break-word;
+                            padding: 8px 16px;
+                            box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                                        0rem 16px 16px -16px rgb(0 0 0 / 10%);
+                        }
+                        .chat-box .outgoing{
+                            display: flex;
+                        }
+                        .chat-box .outgoing .details{
+                            margin-left: auto;
+                            max-width: calc(100% - 130px);
+                        }
+                        .outgoing .details p{
+                            background: #333;
+                            color: #fff;
+                            border-radius: 18px 18px 0 18px;
+                        }
+                        .chat-box .incoming{
+                            display: flex;
+                            align-items: flex-end;
+                        }
+                        .chat-box .incoming img{
+                            height: 35px;
+                            width: 35px;
+                        }
+                        .chat-box .incoming .details{
+                            margin-right: auto;
+                            margin-left: 10px;
+                            max-width: calc(100% - 130px);
+                        }
+                        .incoming .details p{
+                            background: #fff;
+                            color: #333;
+                            border-radius: 18px 18px 18px 0;
+                        } */
+                        .typing-area{
+                            padding: 18px 30px;
+                            display: flex;
+                            justify-content: space-between;
+                            opacity: 97.5%;
+                        }
+                        .typing-area input{
+                            height: 45px;
+                            width: calc(100% - 58px);
+                            font-size: 16px;
+                            padding: 0 13px;
+                            border: 1px solid #e6e6e6;
+                            outline: none;
+                            border-radius: 5px 0 0 5px;
+                        }
+                        .typing-area button{
+                            color: #fff;
+                            width: 55px;
+                            border: none;
+                            outline: none;
+                            background: #333;
+                            font-size: 19px;
+                            cursor: pointer;
+                            opacity: 0.7;
+                            pointer-events: none;
+                            border-radius: 0 5px 5px 0;
+                            transition: all 0.3s ease;
+                        }
+                        .typing-area button.active{
+                            opacity: 1;
+                            pointer-events: auto;
+                        }   
             footer {
                 color: #fff;
                 position: absolute;

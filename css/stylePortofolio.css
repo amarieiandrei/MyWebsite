@@ -131,34 +131,46 @@ html {
                             -webkit-text-fill-color: transparent;
                             background-size: 175%;
                             background-position: right;
+                            margin-top: -40px;
                         }
                         .Carousel {
+                            /* border: 3px solid green; */
                             position: relative;
-                            width: 15%;
-                            height: 250px;
+                            margin: -75px 0 0 -17.5px;
+                            width: 32%;
+                            height: 200px;
                         }
                             .CarouselTrackContainer {
-                                height: 80%;
-                                position: relative;
+                                height:100%;
+                                width:100%;
                             }
                                 .CarouselTrack {
+                                    height:100%;
+                                    width:100%;
                                     padding: 0;
                                     margin: 0;
                                     list-style: none;
                                 }
                                     .CarouselSlide {
-                                        /* display: none; */
+                                        border-radius: 7.25px;
                                         position: absolute;
                                         top: 0;
                                         bottom: 0;
+                                        height:100%;
+                                        width:100%;
+                                        border:10px solid #000;
+                                        box-shadow:0 5px 15px rgba(0,0,0,.1);
+                                        overflow: hidden;
+                                        cursor: pointer;
                                     }
                                         .Portofolio {
-                                            width: 150px;
-                                            height: 200px;
-                                            border-radius: 7.25px;
-                                            border: none;
-                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                                            /* object-fit: cover; */
+                                            height:100%;
+                                            width:100%;
+                                            object-fit: cover;
+                                            transition: .2s linear;
+                                        }
+                                        .Portofolio:hover {
+                                            transform: scale(1.1);
                                         }
                             .CarouselButton {
                                 position: absolute;
@@ -168,34 +180,74 @@ html {
                                 color: #fff;
                                 border: 0;
                                 cursor: pointer;
+                                font-size: larger;
                             }
                                 #CarouselButtonLeft {
                                     position: relative;
                                     left: -50px;
+                                    margin-top: 40px;
                                 }
                                 #CarouselButtonRight {
                                     position: relative;
-                                    right: -190px;
-                                    top: -95px;
+                                    right: -327.5px;
+                                    top: -130px;
                                 }
                             #hatz {
                                 position: absolute;
                                 color: #fff;
                                 letter-spacing: 2px;
                                 width: 22%;
-                                margin-left: 50%;
+                                margin-top: -88px;
+                                margin-left: 110%;
                                 font-family: 'Lato', sans-serif;
                             }
                             .FlexBox {
-                                margin-left: -70px;
-                                margin-top: -270px;
-                                display: flex;
+                                margin-left: -95px;
+                                margin-top: -280px;
+                                display: grid;
                                 place-content: center;
                                 justify-content: space-between;
                             }
                             .FlexBox > button {
-                                margin-right: 10px;
+                                font-family: 'Lato', sans-serif;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                letter-spacing: 3px;
+                                margin-bottom: 130px;
+                                width: 75px;
                             }
+                        .PopupImage {
+                            display: none;
+                            position: fixed;
+                            top:0; left:0;
+                            background: rgba(0,0,0,.9);
+                            height: 100%;
+                            width: 100%;
+                            z-index: 100;
+                        }
+                            .PopupImage span {
+                                position: absolute;
+                                top: 0; right: 10px;
+                                font-size: 60px;
+                                font-weight: bolder;
+                                color: #fff;
+                                cursor: pointer;
+                                z-index: 100;
+                            }
+                            .PopupImage img {
+                                position: absolute;
+                                top: 50%; left: 50%;
+                                transform: translate(-50%, -50%);
+                                border: 5px solid #fff;
+                                border-radius: 5px;
+                                width: 750px;
+                                object-fit: cover;
+                            }
+                                @media (max-width:768px) {
+                                    .PopupImage img {
+                                        width: 95%;
+                                    }
+                                }
                     .Asidebar {
                         display: grid;
                         place-content: center;
@@ -217,7 +269,6 @@ html {
                 justify-content: center;
                 place-items: center;
             }   
-                /*Nu imi place cum e pozitionat butonul*/
                 .PolicyContainer {
                     position: absolute;
                     margin-left: 85vw;

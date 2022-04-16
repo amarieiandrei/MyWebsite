@@ -63,7 +63,7 @@ const apear = async() => {
       await sleep(parseInt(s));
     }
     else {
-      await sleep( 500 );
+      await sleep( 1200 );
     }
   }
 }
