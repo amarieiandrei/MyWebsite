@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
 * {
     margin: 0; padding: 0;
 }
@@ -130,11 +132,66 @@ html {
                             background-size: 175%;
                             background-position: right;
                         }
-                        td {
-                            border: 1px solid white;
-                            padding: 10px;
-                            width:50vw;
+                        .TabContainer {
+                            width: 85%;
+                            height: 100%;
+                            /* border: 5px solid green; */
+                            border-radius: 7.25px;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         }
+                            .ButtonsContainer {
+                                padding: 10px 0 10px 0;
+                                display: flex;
+                                justify-content: space-evenly;
+                            }
+                                .ButtonsContainer button {
+                                    font-family: 'Lato', sans-serif;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1.5px;
+                                    width: 120px;
+                                    background: none;
+                                }
+                            .InfoContainer {
+                                /* border: 5px solid green; */
+                                width: 50%;
+                                margin: auto;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                display: grid;
+                                place-content: center;
+                                border-radius: 7.25px;
+                                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            }
+                                .MainInfo {
+                                    font-family: 'Lato', sans-serif;
+                                    padding: 15px;
+                                }
+                                .WebProgrammingInfo {
+                                    display: none;
+                                    font-family: 'Lato', sans-serif;
+                                    padding: 15px;
+                                }
+                                .WebDesignInfo {
+                                    display: none;
+                                    font-family: 'Lato', sans-serif;
+                                    padding: 15px;
+                                }
+                                .ProblemSolvingInfo {
+                                    display: none;
+                                    font-family: 'Lato', sans-serif;
+                                    padding: 15px;
+                                }
+                                .SomethingInfo1 {
+                                    display: none;
+                                    font-family: 'Lato', sans-serif;
+                                    padding: 15px;
+                                }
+                                .SomethingInfo2 {
+                                    display: none;
+                                    font-family: 'Lato', sans-serif;
+                                    padding: 15px;
+                                }
                     .Asidebar {
                         display: grid;
                         place-content: center;
