@@ -5,8 +5,3 @@ $(document).ready(function(){
         $("#AsidebarMenuID").toggle();
     });
 });
-
-// $("#LiveChatID").on('click', () => {
-//     $("#AsideLiveChatID").show("fast");
-//     $("#AsidebarMenuID").hide();
-// });

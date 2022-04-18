@@ -2,7 +2,6 @@
 const form = document.getElementById('form');
 
 const firstname = document.getElementById('fname');
-// const firstname = $('#fname');
 const lastname = document.getElementById('lname');
 const email = document.getElementById('email');
 const username = document.getElementById('uname');
