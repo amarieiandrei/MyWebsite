@@ -216,6 +216,7 @@ html {
                                 margin-bottom: 130px;
                                 width: 75px;
                             }
+                        /* De aici */
                         .PopupImage {
                             display: none;
                             position: fixed;
@@ -248,6 +249,7 @@ html {
                                         width: 95%;
                                     }
                                 }
+                        /*Pana aici*/
                     .Asidebar {
                         display: grid;
                         place-content: center;

@@ -124,6 +124,7 @@ html {
                         display: grid;
                         place-items: center;
                     }
+                        /*De aici*/
                         .DomainsInterestHeader {
                             font-size: 4rem;
                             background-image: var(--gradient);
@@ -192,6 +193,7 @@ html {
                                     font-family: 'Lato', sans-serif;
                                     padding: 15px;
                                 }
+                                /*Pana aici*/
                     .Asidebar {
                         display: grid;
                         place-content: center;

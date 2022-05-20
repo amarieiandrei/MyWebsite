@@ -13,23 +13,27 @@
         <script src="https://kit.fontawesome.com/e2dfff9fc1.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="../js/AsideLiveChat.js" defer></script>
+        <script src="../js/ajax.js" defer></script>
     </head>
 
     <body>
         <div class="Container">
             <header>
                 <a href="../html/home.html" class="Logo" style="color: #fff;">
-                    <i class="fa-brands fa-magento fa-2xl"></i>
+                    <div class="LogoCircleOutside">
+                        <div class="LogoCircleInside">M</div>
+                    </div>
+                    <span class="LogoSpan">aliakademy</span>
                 </a>
                 
-                <div class="transition">
+                <div class="Transition">
                     PEEP THE VISION
                 </div>
 
-                <button class="Cv" id="DownloadButton">
+                <a href="../documents/Andrei-Amariei-Resume.pdf" download="Andrei-Amariei-Resume" class="Cv">
                     Download CV
                     <i class="fa-solid fa-arrow-down"></i>
-                </button>
+                </a>
             </header>
             
             <div class="Nvb-Main-Container">
@@ -85,8 +89,11 @@
                         <p class="DescriptionText">STUDENT // SOFTWARE DEVELOPER</p>
                         
                         <button class="LiveChat" id="LiveChatID">LET'S<br>TALK</button>
+
                         <div class="line"></div>
                         <div class="arrow"></div>
+
+                        <div class="BehindMe"></div>
                     </div>
 
                     <aside class="Asidebar">
@@ -123,12 +130,12 @@
                                 </div>
                             </div>
 
-                            <div class="chat-box"></div>
+                            <div class="chat-box" id="chat-box-id"></div>
                             
                             <form action="#" class="typing-area">
                                 <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
-                                <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
-                                <button><i class="fab fa-telegram-plane"></i></button>
+                                <input type="text" name="message" class="input-field" id="message-need" placeholder="Type a message here..." />
+                                <span onclick="loadDoc()"><i class="fab fa-telegram-plane"></i></span>
                             </form>
                         </section>
                     </aside>
