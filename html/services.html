@@ -16,17 +16,20 @@
         <div class="Container">
             <header>
                 <a href="../html/home.html" class="Logo" style="color: #fff;">
-                    <i class="fa-brands fa-magento fa-2xl"></i>
+                    <div class="LogoCircleOutside">
+                        <div class="LogoCircleInside">M</div>
+                    </div>
+                    <span class="LogoSpan">aliakademy</span>
                 </a>
                 
-                <div class="transition">
+                <div class="Transition">
                     PEEP THE VISION
                 </div>
-                
-                <button class="Cv">
+
+                <a href="../documents/Andrei-Amariei-Resume.pdf" download="Andrei-Amariei-Resume" class="Cv">
                     Download CV
                     <i class="fa-solid fa-arrow-down"></i>
-                </button>
+                </a>
             </header>
             
             <div class="Nvb-Main-Container">
@@ -79,23 +82,23 @@
                     <div class="MainFocus">
                         <div class="ServicesContainer">
                             <h1 class="ServicesHeader">Services</h1>
-                            <h2>Building Digital Product</h2>
-                            <h3>If You Wish to Collab you will need To</h3>
+                            <h2 style="letter-spacing: 1.25px">Building Digital Product</h2>
+                            <h3 style="letter-spacing: 1.25px">If You Wish to Collab you will need To</h3>
                         </div>
                         
                         <form class="LoginForm" action="../html/dashboard.html" target="_blank" method="get">
                             <!-- <fieldset class="LoginFieldset"> -->
 
-                                <label id="uname"><b>Username</b></label>
+                                <label id="uname" style="letter-spacing: 1px;"><b>Username</b></label>
                                 <input type="text" placeholder="Enter Username" name="uname" required>
                                 
-                                <label id="psw"><b>Password</b></label>
+                                <label id="psw" style="letter-spacing: 1px;"><b>Password</b></label>
                                 <input type="password" placeholder="Enter Password" name="psw" required>
                                 
                                 <button class="Cv" type="submit">Login</button>
 
                                 <label>
-                                    <input class="Checkbox" type="checkbox" checked="checked" name="remember"> Remember me
+                                    <input class="Checkbox" type="checkbox" name="remember"> Remember me
                                 </label>
 
                             <!-- </fieldset> -->
@@ -124,7 +127,7 @@
                 </main>
             </div>
             <footer>
-                <div class="CopyrightContainer">© Andrei Amariei, All Rights Reserved</div>
+                <p class="CopyrightText">© Andrei Amariei, All Rights Reserved</p>
                 <div class="PolicyContainer">
                     <div class="Cv">
                         <a href="../documents/Andrei-Amariei-Privacy-Policy.pdf" target="_blank" class="PolicyText">Privacy Policy</a>

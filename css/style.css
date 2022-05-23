@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
 
 * {
     margin: 0; padding: 0;
@@ -33,6 +34,7 @@ html {
     background-position: left;
     transition: background-position 1s;
     font-family: 'Times New Roman', Times, serif;
+    color: #fff;
 }
     body {
     }
@@ -60,17 +62,17 @@ html {
                         border-radius: 100%;
                         background: hsl(0 0% 100% / 0.1);
                     }
-                    .LogoCircleInside {
-                        width: 30px;
-                        height: 30px;
-                        background-color: #000;
-                        border-radius: 100%;
-                        display: grid;
-                        place-content: center;
-                        background-image: var(--gradient);
-                        background-size: 375%;
-                        background-position: left;
-                    }
+                        .LogoCircleInside {
+                            width: 30px;
+                            height: 30px;
+                            background-color: #000;
+                            border-radius: 100%;
+                            display: grid;
+                            place-content: center;
+                            background-image: var(--gradient);
+                            background-size: 375%;
+                            background-position: left;
+                        }
                     .LogoSpan {
                         text-decoration: none;
                         font-size: 16px;
@@ -87,11 +89,13 @@ html {
                     animation: myTransition 5s infinite;
                     animation-timing-function: linear;
                     color: #fff;
+                    font-family: 'Roboto Flex', sans-serif;
+                    letter-spacing: 0.5px;
                 }
-                @keyframes myTransition {
-                    0% {left: -22vw;}
-                    100%  {left: 25vw;}
-                }
+                    @keyframes myTransition {
+                        0% {left: -22vw;}
+                        100%  {left: 25vw;}
+                    }
                 .Cv {
                     width: 125px;
                     height: 40px;
@@ -117,7 +121,7 @@ html {
                 display: flex;
                 justify-content: left;
                 padding: 0 50px 0 75px;
-
+                    
                 /* min-height: calc(100vh - 165px); */
             }
                .Navbar {
@@ -136,24 +140,25 @@ html {
                         .NavbarItem {
                             margin: 0 0 1.5em 0;
                         }
-                        .NavbarItem > a {
-                            font-family: Arial, Helvetica, sans-serif;
-                            text-transform: uppercase;
-                            color: #fff;
-                            letter-spacing: 2px;
-                            text-decoration: none;
-                        }
-                        .NavbarItem > a:hover {
-                            background-image: var(--gradient);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-size: 125%;
-                            background-position: right;
-                        }
-                        .NavbarItem > a > span {
-                            font-weight: 700;
-                            margin-inline-end: 0.75em;
-                        }
+                            .NavbarItem > a {
+                                text-transform: uppercase;
+                                color: #fff;
+                                letter-spacing: 3px;
+                                text-decoration: none;
+                                font-family: 'Roboto Flex', sans-serif;
+                            }
+                            .NavbarItem > a:hover {
+                                background-image: var(--gradient);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-size: 125%;
+                                background-position: right;
+                            }
+                                .NavbarItem > a > span {
+                                    font-family: 'Roboto Flex', sans-serif;
+                                    font-weight: 700;
+                                    margin-inline-end: 0.75em;
+                                }
                 main {
                     display: flex;
                     width: 100vw;
@@ -163,38 +168,61 @@ html {
                         width: 100%;
                         display: grid;
                         place-content: center;
-                        position: relative;
                     }
-                        .Me {
-                            width: 300px;
-                            height: 400px;
+                        .BehindImg {
+                            display: grid;
+                            place-content: center;
+                            position: relative;
                         }
+                            .Me {
+                                width: 300px;
+                                height: 400px;
+                                margin-left: -100px;
+                                z-index: 0;
+                            }
+                            .BehindMe {
+                                position: absolute;
+                                margin-top: 50px;
+                                position: absolute;
+                                width: 275px;
+                                height: 200px;
+                                background-color: #000;
+                                z-index: -1;
+                                border-top-right-radius: 100%;
+                                border-top-left-radius: 100%;
+                                border: 0.25px solid hsl(0 0% 100% / 0.75);
+                                background: hsl(0 0% 100% / 0.05);
+                                margin-left: 40px;
+                            }
                         .NameText {
                             color: #fff;
                             font-size: 4rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -120px 0 0 -100px;
+                            margin: -120px 0 0 -90px;
                             letter-spacing: 2px;
+                            z-index: 1;
                         }
                         .DescriptionText {
                             color: #fff;
                             font-size: 1rem;
-                            font-family: 'Times New Roman', Times, serif;
-                            margin: -30px 0 0 -50px;
+                            margin: -35px 0 0 -30px;
                             letter-spacing: 3px;
+                            z-index: 1;
+                            font-family: 'Roboto Flex', sans-serif;
                         }
                         .LiveChat {
                             width: 80px;
                             height: 80px;
                             border-radius: 50%;
-                            color: #fff;
+                            color: darkslateblue;
                             border: none;
                             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                            letter-spacing: 2px;
-                            font-family: Arial, Helvetica, sans-serif;
+                            letter-spacing: 3px;
+                            font-family: 'Roboto Flex', sans-serif;
+                            font-weight: bold;
                             margin: -210px 0 0 275px;
                             background-image: var(--gradient);
                             background-size: 200%;
+                            z-index: 1;
                         }
                         .LiveChat:hover {
                             cursor: pointer;
@@ -208,6 +236,7 @@ html {
                             width: 60px;
                             height: 0.1px;
                             margin: -173.5px 0 0 345px;
+                            z-index: 1;
                         }
                         .arrow {
                             width: 1px;
@@ -217,22 +246,9 @@ html {
                             padding: 1px;
                             -webkit-transform: rotate(135deg);
                             margin: -175px 0 0 345px;
-                        }
-                        .BehindMe {
-                            margin-top: 50px;
-                            position: absolute;
-                            width: 275px;
-                            height: 200px;
-                            background-color: #000;
-                            margin-left: calc(32%);
-                            z-index: -1;
-                            border-top-right-radius: 100%;
-                            border-top-left-radius: 100%;
-                            border: 0.25px solid hsl(0 0% 100% / 0.75);
-                            background: hsl(0 0% 100% / 0.05);
+                            z-index: 1;
                         }
                     .Asidebar {
-                        /* display: none; */
                         position: absolute;
                         display: grid;
                         place-items: center;
@@ -242,7 +258,6 @@ html {
                         margin-right: 20px;
                     }
                         #AsidebarMenuID {
-                            /* display: none; */
                             list-style: none;
                         }
                             .AsidebarItem {
@@ -277,7 +292,6 @@ html {
                             padding: 18px 30px;
                         }
                         .chat-area .AsideHeader .back-icon {
-                            /* color: #333; */
                             color: #fff;
                             font-size: 18px;
                         }
@@ -383,20 +397,22 @@ html {
                             pointer-events: auto;
                         }   
             footer {
-                color: #fff;
                 position: absolute;
                 bottom: 0;
-                width: 94%;
-                height:60px;
+                width: 98vw;
+                height: 60px;
                 display: flex;
                 justify-content: center;
-                place-items: center;
             }
-                /*Nu imi place cum e pozitionat butonul*/
+                .CopyrightText {
+                    font-family: 'Roboto Flex', sans-serif;
+                    letter-spacing: 0.25px;
+                }
                 .PolicyContainer {
                     position: absolute;
-                    margin-left: 85vw;
-                    margin-bottom: 25px;
+                    right: 0;
+                    margin-right: 45px;
+                    margin-top: -10px;
                 }
                     .PolicyText {
                         text-decoration: none;
@@ -423,18 +439,3 @@ html {
         margin-bottom: 40px;
     }
 }
-
-/* @media screen and ( max-width: 600px ) {
-    main {
-        display: block;
-        width: 100vw;
-        justify-content: space-between;
-    }
-    .AsidebarMenu {
-        display: flex;
-        gap: 1em;
-    }
-    .Navbar {
-        height: 300px;
-    }
-} */

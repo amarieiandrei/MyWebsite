@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
 * {
     margin: 0; padding: 0;
 }
@@ -14,13 +17,24 @@
     );
 }
 
+:root {
+    --gradient2: linear-gradient(
+        45deg,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
 html {
     background-image: var(--gradient);
     background-size: 300%;
     background-position: left;
     transition: background-position 1s;
-    color: #fff;
     font-family: 'Times New Roman', Times, serif;
+    color: #fff;
     font-size: 1rem;
 }
     body {
@@ -32,40 +46,70 @@ html {
                 display: flex;
                 justify-content: space-between;
                 padding: 25px;
-                margin-bottom: 25px;
-            }   
+                margin-bottom: 10px;
+            }
                 .Logo {
                     display: flex;
                     place-items: center;
-                    margin-left: 140px;
+                    margin-left: 85px;
+                    text-decoration: none;
                 }
+                    .LogoCircleOutside {
+                        width: 45px;
+                        height: 45px;
+                        background-color: red;
+                        display: grid;
+                        place-content: center;
+                        border-radius: 100%;
+                        background: hsl(0 0% 100% / 0.1);
+                    }
+                        .LogoCircleInside {
+                            width: 30px;
+                            height: 30px;
+                            background-color: #000;
+                            border-radius: 100%;
+                            display: grid;
+                            place-content: center;
+                            background-image: var(--gradient);
+                            background-size: 375%;
+                            background-position: left;
+                        }
+                    .LogoSpan {
+                        text-decoration: none;
+                        font-size: 16px;
+                        margin-left: -15px;
+                        text-transform: uppercase;
+                    }
                 .Logo:hover {
                     animation: fa-beat 1.75s ease infinite;
                 }
-                .transition {
+                .Transition {
                     position: relative;
                     display: flex;
                     place-items: center;
                     animation: myTransition 5s infinite;
                     animation-timing-function: linear;
                     color: #fff;
+                    font-family: 'Roboto Flex', sans-serif;
+                    letter-spacing: 0.5px;
                 }
-                @keyframes myTransition {
-                    0% {left: -25vw;}
-                    100%  {left: 25vw;}
-                }
+                    @keyframes myTransition {
+                        0% {left: -22vw;}
+                        100%  {left: 25vw;}
+                    }
                 .Cv {
-                    width: 150px;
+                    width: 125px;
                     height: 40px;
                     color: white;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
                     place-items: center;
                     padding: 0 20px 0 20px;
                     background: hsl(0 0% 100% / 0.1);
                     border-radius: 7.25px;
                     border: none;
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    text-decoration: none;
                 }
                 .Cv:hover {
                     cursor: pointer;
@@ -78,6 +122,8 @@ html {
                 display: flex;
                 justify-content: left;
                 padding: 0 50px 0 75px;
+                    
+                /* min-height: calc(100vh - 165px); */
             }
                 .Navbar {
                     display: grid;
@@ -95,24 +141,25 @@ html {
                         .NavbarItem {
                             margin: 0 0 1.5em 0;
                         }
-                        .NavbarItem > a {
-                            font-family: Arial, Helvetica, sans-serif;
-                            text-transform: uppercase;
-                            color: #fff;
-                            letter-spacing: 2px;
-                            text-decoration: none;
-                        }
-                        .NavbarItem > a:hover {
-                            background-image: var(--gradient);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            background-size: 125%;
-                            background-position: right;
-                        }
-                        .NavbarItem > a > span {
-                            font-weight: 700;
-                            margin-inline-end: 0.75em;
-                        }
+                            .NavbarItem > a {
+                                text-transform: uppercase;
+                                color: #fff;
+                                letter-spacing: 3px;
+                                text-decoration: none;
+                                font-family: 'Roboto Flex', sans-serif;
+                            }
+                            .NavbarItem > a:hover {
+                                background-image: var(--gradient);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-size: 125%;
+                                background-position: right;
+                            }
+                                .NavbarItem > a > span {
+                                    font-family: 'Roboto Flex', sans-serif;
+                                    font-weight: 700;
+                                    margin-inline-end: 0.75em;
+                                }
                 main {
                     display: flex;
                     width: 100vw;
@@ -133,6 +180,8 @@ html {
                             -webkit-text-fill-color: transparent;
                             background-size: 175%;
                             background-position: right;
+                            font-family: 'Roboto Flex', sans-serif;
+                            letter-spacing: 1.5px;
                         }
                         .SignUpText {
                             margin-bottom: -250px;
@@ -143,6 +192,8 @@ html {
                             -webkit-text-fill-color: transparent;
                             background-size: 275%;
                             background-position: right;
+                            font-family: 'Roboto Flex', sans-serif;
+                            letter-spacing: 1.5px;
                         }
                         .SignUpForm {
                             margin-left: -20px;
@@ -221,20 +272,22 @@ html {
                                 text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
                             }
             footer {
-                color: #fff;
                 position: absolute;
                 bottom: 0;
-                width: 94%;
-                height:60px;
+                width: 98vw;
+                height: 60px;
                 display: flex;
                 justify-content: center;
-                place-items: center;
-            }   
-                /*Nu imi place cum e pozitionat butonul*/
+            }
+                .CopyrightText {
+                    font-family: 'Roboto Flex', sans-serif;
+                    letter-spacing: 0.25px;
+                }
                 .PolicyContainer {
                     position: absolute;
-                    margin-left: 85vw;
-                    margin-bottom: 25px;
+                    right: 0;
+                    margin-right: 45px;
+                    margin-top: -10px;
                 }
                     .PolicyText {
                         text-decoration: none;
@@ -261,17 +314,3 @@ html {
         margin-bottom: 40px;
     }
 }
-
-/* @media screen and ( max-width: 600px ) {
-    main {
-        display: block;
-        width: 100vw;
-        justify-content: space-between;
-    }
-    .AsidebarMenu {
-        display: flex;
-        gap: 1em;
-    }
-    .Navbar {
-        height: 300px;
-    }
